@@ -1,0 +1,16 @@
+ROTATION BELVEDERE - application de relevé de plaques
+
+Contenu : index.html (l'application), manifest.webmanifest, sw.js (fonctionnement hors connexion), icônes.
+
+1) INSTALLER SANS APK (le plus simple)
+- Allez sur https://app.netlify.com/drop (compte gratuit) et glissez le dossier "belvedere-app" tel quel.
+- Netlify donne une adresse en https. Ouvrez-la dans Chrome sur la tablette, patientez quelques secondes en ligne,
+  puis menu ⋮ > "Installer l'application" (ou "Ajouter à l'écran d'accueil").
+- L'appli s'ouvre en plein écran et fonctionne ensuite sans réseau.
+
+2) FABRIQUER UN FICHIER APK
+- Une fois l'adresse https obtenue, allez sur https://www.pwabuilder.com, collez l'adresse, "Package for stores" > Android.
+- Téléchargez le paquet : il contient l'APK. Sur la tablette, autorisez les sources inconnues pour l'installer.
+
+Les saisies sont enregistrées sur la tablette (une tablette = un relevé). Exportez en .xlsx après chaque passage.
+Si vous modifiez index.html plus tard, changez aussi le numéro de version "belvedere-v1" dans sw.js, pour que les tablettes se mettent à jour.
